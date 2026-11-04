@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliothèque & annuaire | A.E.LMMS.P 1994-2000</title>
+<meta name="description" content="Annuaire des membres et archives officielles de l'A.E.LMMS.P 1994-2000.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap hbar">
+<a href="index.html" class="brand"><img src="assets/logo.png" alt="Logo A.E.LMMS.P"><div><b>A.E.LMMS.P</b><small>PROMOTION 1994-2000</small></div></a>
+<button class="burger" onclick="toggleMenu()" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+<nav id="nav"><ul><li><a href="index.html">Accueil</a></li><li><a href="apropos.html">À propos</a></li><li><a href="bureau.html">Le Bureau</a></li><li><a href="bibliotheque.html" class="active">Bibliothèque</a></li><li><a href="partenariat.html">Partenariat</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="contact.html" class="cta">Contact</a></li></ul></nav>
+</div></header>
+<div class="page-hero"><div class="wrap"><div class="crumb">Accueil / Bibliothèque</div><h1>Bibliothèque numérique & annuaire</h1><p>Retrouvez les membres de la promotion et les documents officiels de l'amicale.</p></div></div>
+<section><div class="wrap">
+<div class="tabs"><button class="tab on" onclick="openTab('annuaire',this)"><i class="fa-solid fa-address-book"></i> Annuaire des membres</button><button class="tab" id="tdocs" onclick="openTab('docs',this)"><i class="fa-solid fa-folder-open"></i> Archives &amp; documents</button></div>
+<div id="annuaire" class="pane on">
+<input id="searchBox" class="search" type="search" onkeyup="filterMembers()" placeholder="Rechercher par nom ou profession…">
+<p id="count" style="text-align:center;color:var(--muted);margin-bottom:22px;font-weight:600"></p>
+<div id="gallery" class="grid g4"></div>
+<p style="text-align:center;color:var(--muted);font-size:.88rem;margin-top:30px">Vous souhaitez figurer dans l'annuaire ou corriger vos informations ? <a href="contact.html" style="color:var(--teal);font-weight:700">Écrivez au Bureau</a>.</p>
+</div>
+<div id="docs" class="pane"><div style="max-width:820px;margin:0 auto"><div class="doc"><div class="ico"><i class="fa-solid fa-book"></i></div><div><b>Statuts de l'A.E.LMMS.P</b><small>Création, siège, objectifs, organisation, ressources et discipline · Format Word</small></div><a class="dl" href="documents/statuts.docx" download title="Télécharger"><i class="fa-solid fa-download"></i></a></div><div class="doc"><div class="ico"><i class="fa-solid fa-gavel"></i></div><div><b>Règlement intérieur</b><small>Adhésion, activités, attributions du Bureau, finances et sanctions · Format Word</small></div><a class="dl" href="documents/reglement-interieur.docx" download title="Télécharger"><i class="fa-solid fa-download"></i></a></div><div class="doc"><div class="ico"><i class="fa-solid fa-file-lines"></i></div><div><b>Procès-verbal de l'Assemblée Générale constitutive</b><small>Séance du 7 mars 2020, liste de présence et composition du Bureau · Format Word</small></div><a class="dl" href="documents/pv-ag-constitutive.docx" download title="Télécharger"><i class="fa-solid fa-download"></i></a></div><div class="doc"><div class="ico"><i class="fa-solid fa-stamp"></i></div><div><b>Déclaration de création de l'association</b><small>Déclaration faite à Koutiala le 7 mars 2020 · Format Word</small></div><a class="dl" href="documents/declaration-creation.docx" download title="Télécharger"><i class="fa-solid fa-download"></i></a></div></div></div>
+</div></section>
+<script>if(location.hash==='#docs'){document.getElementById('tdocs').click();}</script>
+<footer><div class="wrap">
+<div class="fgrid">
+<div><div class="fbrand"><img src="assets/logo.png" alt=""><b>A.E.LMMS.P 1994-2000</b></div>
+<p>Amicale des Élèves du Lycée Monseigneur Didier de Montclos de Sikasso, promotion 1994-2000. Association apolitique, non confessionnelle et à but non lucratif.</p></div>
+<div><h4>Navigation</h4><a href="index.html">Accueil</a><a href="apropos.html">À propos</a><a href="bureau.html">Le Bureau</a><a href="bibliotheque.html">Bibliothèque</a><a href="partenariat.html">Partenariat</a><a href="actualites.html">Actualités</a><a href="contact.html">Contact</a></div>
+<div><h4>Siège</h4><p><i class="fa-solid fa-location-dot"></i> Koutiala, quartier Lafiala<br>Mali</p><br><p><i class="fa-solid fa-scale-balanced"></i> contact.aelmmsp94@gmail.com</p></div>
+</div>
+<div class="copy">&copy; 2026 A.E.LMMS.P 1994-2000 — Fraternité · Entraide · Solidarité · Progrès</div>
+</div></footer>
+<script src="membres.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
